@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat')
+$bg-color: #22222a
+html 
+    box-sizing: border-box
+    height: 100%
+
+body
+    height: 100%
+    font-family: 'Montserrat', sans-serif
+
+*
+    padding: 0
+    margin: 0
+
+*, 
+*:before, 
+*:after 
+    box-sizing: inherit
+
+.wrapper
+    width: 100%
+    position: relative
+
+.row
+    width: auto
+    display: flex
+
+.row:after
+    content: ''
+    clear: both
+
+.row-full-height, .col-full-height
+    height: 100%
+
+@for $i from 1 through 12
+    .row .col-#{$i}
+        width: 8.333333% * $i
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12
+    position: relative
+    min-height: 1px
+    float: left
+
+.pedding
+    padding-left: 14px
+    padding-right: 14px
+
+.red
+    background-color: red
+
+.hidden-div
+    display: none
+
+.col-in-mid
+    display: flex
+
+.h-mid
+    justify-content: center
+
+.v-mid
+    align-items: center
+
+.site-border
+    margin: 25px
+    pointer-events: none
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 10
+
+.text-center
+    text-align: center

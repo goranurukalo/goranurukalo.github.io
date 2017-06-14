@@ -1,0 +1,16 @@
+{
+  "name": "webpraktikumrad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/node-sass -w --output-style compressed -o css css "
+  },
+  "author": "",
+  "license": "ISC"
+}
