@@ -118,7 +118,7 @@ function contactformsend(){
     var email = $("#email").val() , 
         fullname = $("#fullname").val(),
         message = $("#message").val();
-    var _fullname = /^\w+$/,
+    var _fullname = /^[\w\s]+$/,
         _email = /^\S+\@\S+\.\S{2,4}$/;
     
     var num = 0;
