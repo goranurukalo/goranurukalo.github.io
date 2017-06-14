@@ -142,8 +142,8 @@ function contactformsend(){
     if(num > 0){
         return false;
     }
-
-    return false;
+    
+    return true;
 }
 
 function errorMessage(id){
