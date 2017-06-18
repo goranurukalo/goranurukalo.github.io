@@ -25,7 +25,8 @@ $(document).ready(function(){
     }
 
     document.addEventListener("touchmove", preventLoadingAnimation, false);
-    document.addEventListener("mousewheel DOMMouseScroll", preventLoadingAnimation, false);//mousewheel
+    document.addEventListener("mousewheel", preventLoadingAnimation, false);
+    document.addEventListener("DOMMouseScroll", preventLoadingAnimation, false);
 
     function preventLoadingAnimation(event){        
         if(loading){            
@@ -67,7 +68,7 @@ $(document).ready(function(){
             $(".hamburger-menu").addClass("white-hamb-color");
             $(obj).addClass("hamb-menu-menumod-active");
             $(".menu-page ul").addClass("slideInUp").removeClass("no-animation");
-            $(".menu-page").css({"opacity":"1","z-index":"1","pointer-events":"auto"});
+            $(".menu-page").css({"opacity":"1","z-index":"2","pointer-events":"auto"});//z-index 1
         }
     }
 
