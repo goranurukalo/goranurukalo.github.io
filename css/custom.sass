@@ -953,6 +953,12 @@ form > .row
         a:hover + .project-template-plus > i
             opacity: 1
 
+@-moz-document url-prefix()
+    .project-template-row .project-template-col .project-template-plus
+        position: absolute
+        margin-top: -10px
+        pointer-events: none
+
 //@media(min-width: 576px)
 
 @media(min-width: 768px)
