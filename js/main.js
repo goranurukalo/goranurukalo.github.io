@@ -25,7 +25,7 @@ $(document).ready(function(){
     }
 
     document.addEventListener("touchmove", preventLoadingAnimation, false);
-    document.addEventListener("mousewheel", preventLoadingAnimation, false);
+    document.addEventListener("wheel", preventLoadingAnimation, false);//mousewheel
 
     function preventLoadingAnimation(){        
         if(loading){            
