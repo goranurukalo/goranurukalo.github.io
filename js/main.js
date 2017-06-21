@@ -153,7 +153,7 @@ function errorMessage(id){
 
 function initMap() {
     
-    var uluru = {lat: 44.850 , lng: 20.337};//44.850  - 20.337 // bilo -> -25.363 - 131.044
+    var uluru = {lat: 44.8509538 , lng: 20.3375905};//44.850  - 20.337 // 44.8509538,20.3375905
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         scrollwheel: false,
